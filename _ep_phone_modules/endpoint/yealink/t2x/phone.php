@@ -86,7 +86,7 @@ class endpoint_yealink_t2x_phone extends endpoint_yealink_base {
                 }
             }
         }
-        
+
         //Set line key defaults
         $s = $this->max_lines + 10;
         for ($i = 11; $i <= $s; $i++) {
@@ -104,7 +104,7 @@ class endpoint_yealink_t2x_phone extends endpoint_yealink_base {
         if (isset($this->settings['loops']['sdext38'])) {
             foreach ($this->settings['loops']['sdext38'] as $key => $data) {
                 if ($this->settings['loops']['sdext38'][$key]['type'] == '16') {
-                    $this->settings['loops']['sdext38'][$key]['pickup_value'] = $this->settings['call_pickup'] . $this->settings['loops']['sdext38'][$key]['value'];
+                    $this->settings['loops']['sdext38'][$key]['pickup_value'] = $this->settings['call_pickup'];
                 } elseif ($this->settings['loops']['sdext38'][$key]['type'] == '0') {
                     unset($this->settings['loops']['sdext38'][$key]);
                 } else {
@@ -116,7 +116,7 @@ class endpoint_yealink_t2x_phone extends endpoint_yealink_base {
         if (isset($this->settings['loops']['memkey'])) {
             foreach ($this->settings['loops']['memkey'] as $key => $data) {
                 if ($this->settings['loops']['memkey'][$key]['type'] == '16') {
-                    $this->settings['loops']['memkey'][$key]['pickup_value'] = $this->settings['call_pickup'] . $this->settings['loops']['memkey'][$key]['value'];
+                    $this->settings['loops']['memkey'][$key]['pickup_value'] = $this->settings['call_pickup'];
                 } elseif ($this->settings['loops']['memkey'][$key]['type'] == '0') {
                     unset($this->settings['loops']['memkey'][$key]);
                 } else {
@@ -128,7 +128,7 @@ class endpoint_yealink_t2x_phone extends endpoint_yealink_base {
         if (isset($this->settings['loops']['memkey2'])) {
             foreach ($this->settings['loops']['memkey2'] as $key => $data) {
                 if ($this->settings['loops']['memkey2'][$key]['type'] == '16') {
-                    $this->settings['loops']['memkey2'][$key]['pickup_value'] = $this->settings['call_pickup'] . $this->settings['loops']['memkey2'][$key]['value'];
+                    $this->settings['loops']['memkey2'][$key]['pickup_value'] = $this->settings['call_pickup'];
                 } elseif ($this->settings['loops']['memkey2'][$key]['type'] == '0') {
                     unset($this->settings['loops']['memkey2'][$key]);
                 } else {
