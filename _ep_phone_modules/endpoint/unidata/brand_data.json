@@ -1,0 +1,26 @@
+{
+  "data": {
+    "brands": {
+      "name": "Unidata",
+      "directory": "unidata",
+      "brand_id": "18",
+      "package": "unidata.tgz",
+      "md5sum": "5d715238aa6ccd11996940e89a0cd0f6",
+      "last_modified": 1395183811,
+      "family_list": [
+        {
+          "id": "1",
+          "name": "Unidata Model [WPU-7800]",
+          "directory": "WPUxxxx",
+          "description": "",
+          "changelog": "",
+          "last_modified": null
+        }
+      ],
+      "oui_list": [
+        ""
+      ],
+      "changelog": "PACKAGER: "
+    }
+  }
+}
